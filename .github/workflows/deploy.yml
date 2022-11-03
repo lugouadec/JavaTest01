@@ -23,3 +23,6 @@ jobs:
         distribution: 'temurin'
     - name: Deploy with Ant
       run: ant -f \Programa01 -Dnb.internal.action.name=rebuild clean jar
+    - name: Push local site to remote
+      run: |
+        git push -f origin master
