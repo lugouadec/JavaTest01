@@ -25,4 +25,4 @@ jobs:
       run: ant -f \Programa01 -Dnb.internal.action.name=rebuild clean jar
     - name: Push local site to remote
       run: |
-        git push -f origin master
+        git push -f origin main
